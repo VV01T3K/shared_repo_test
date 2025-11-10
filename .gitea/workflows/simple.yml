@@ -1,0 +1,13 @@
+name: Simple Action
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  simple-job:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Hello World
+      run: echo "Hello from Gitea Action!"
